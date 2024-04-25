@@ -6,17 +6,17 @@ function tossCoin(userChoice) {
 
     if (randomNumber === 1) {
         result = "heads";
-        coinImage.innerHTML = '<img src="/images.jpg" alt="Heads">';
+        coinImage.innerHTML = '<img src="https://i.ebayimg.com/images/g/EQcAAOSw5mZhoOxs/s-l1200.webp" style="width: 150px;">';
     } else {
         result = "tails";
-        coinImage.innerHTML = '<img src="/tail.jpg" alt="Tails">';
+        coinImage.innerHTML = '<img src="https://www.foreigncurrencyandcoin.com/wp-content/uploads/2018/12/products-18814.jpg" style="width: 150px;">';
     }
 
     if (randomNumber === userChoice) {
         // alert("You win! The result is " + result + ".");
-        resultout.innerHTML = `You won ! the result is ${result}.`
+        resultOut.innerHTML = `You won ! the result is ${result}.`
     } else {
         // alert("You lose! The result is " + result + ".");
-        resultout.innerHTML = `You loss ! the result is ${result}.`
+        resultOut.innerHTML = `You loss ! the result is ${result}.`
     }
 }
